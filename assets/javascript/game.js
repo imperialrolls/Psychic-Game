@@ -2,21 +2,35 @@
 
 var wins = 0;
 
-// loses
+// losses
 
-var loses = 0;
+var losses = 0;
 
 // guesses
 
 var guesses = 9;
 
-// computers letter
+// computer's letter
 
-var computersLetter = "e";
+var computersLetter = "";
+
+var letterBucket = [ "a" , "b" , "c" , "d" , "e" , "f" , "g" , "h" , "i" , "j" , "k" , "l" , "m" , "n" , "o" , "p" , "q" , "r" , "s" , "t" , "u" , "v" , "w" , "x" , "y" ];
+
 
 // guesses so far
 
 var soFar = "";
+
+// random letter function
+
+var checkLetterBucket = function() {
+	computersLetter = letterBucket[Math.floor(Math.random() * letterBucket.length)];
+	console.log(computersLetter);
+}
+
+checkLetterBucket();
+
+
 
 // keyboard event listerner
 
@@ -30,6 +44,7 @@ document.onkeyup = function(event) {
 		wins = wins + 1;
 		guesses = 9;
 		soFar = "";
+		checkLetterBucket();
 	} else {
 		guesses = guesses - 1;
 	}
@@ -38,10 +53,15 @@ document.onkeyup = function(event) {
 	console.log("guesses = " + guesses);
 
 	if (guesses == 0) {
-		loses = loses + 1;
+		losses = losses + 1;
+		soFar = "";
+		guesses = 9;
 	}
 
-	console.log("loses = " + loses);
+	console.log("losses = " + losses);
+
+
+
 
 // update display
 
@@ -54,6 +74,7 @@ function displayResults() {
 document.getElementById("guessesLeft").innerHTML = guesses;
 document.getElementById("wins").innerHTML = wins;
 document.getElementById("soFar").innerHTML = soFar;
+document.getElementById("losses").innerHTML = losses;
 
 
 

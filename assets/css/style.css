@@ -1,0 +1,35 @@
+body {
+	background-image: url("../images/crystalball.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	font-family: 'Lobster', cursive; 
+	color: #e7c0ea;
+}
+
+
+h1 {
+	font-size: 6em;
+	text-shadow: 2px 2px 8px #FF0000;
+}
+
+h2 {
+	font-size: 2em;
+	text-shadow: 2px 2px 4px #FF0000;
+}
+
+
+.logo {
+	text-align: center;
+    border: 1px color: #837384;
+
+}
+
+.padded-box {
+	padding: 18px;
+	border: 4px solid #ccc;
+	background: rgb(200, 54, 54); /* The Fallback */
+   	background: rgba(200, 54, 54, 0.5);
+
+}
+
