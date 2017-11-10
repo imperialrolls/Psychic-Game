@@ -2,26 +2,31 @@ body {
 	background-image: url("../images/crystalball.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
+    background-color: #111111;
 	font-family: 'Lobster', cursive; 
-	color: #e7c0ea;
+	color: #ede1e1;
 }
 
 
 h1 {
 	font-size: 6em;
-	text-shadow: 2px 2px 8px #FF0000;
+	text-shadow: 2px 2px #FF0000;
 }
 
 h2 {
 	font-size: 2em;
-	text-shadow: 2px 2px 4px #FF0000;
+	text-shadow: 2px 2px #FF0000;
+}
+
+p {
+	font-size: 2em;
+	text-shadow: 1px 1px #FF0000;
 }
 
 
 .logo {
 	text-align: center;
-    border: 1px color: #837384;
 
 }
 

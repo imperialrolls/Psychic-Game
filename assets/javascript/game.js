@@ -21,6 +21,15 @@ var letterBucket = [ "a" , "b" , "c" , "d" , "e" , "f" , "g" , "h" , "i" , "j" ,
 
 var soFar = "";
 
+// game start function
+
+function startgame() {
+	wins = 0;
+	losses = 0;
+	guesses = 9;
+
+}
+
 // random letter function
 
 var checkLetterBucket = function() {
@@ -30,7 +39,7 @@ var checkLetterBucket = function() {
 
 checkLetterBucket();
 
-
+startgame();
 
 // keyboard event listerner
 
@@ -75,8 +84,6 @@ document.getElementById("guessesLeft").innerHTML = guesses;
 document.getElementById("wins").innerHTML = wins;
 document.getElementById("soFar").innerHTML = soFar;
 document.getElementById("losses").innerHTML = losses;
-
-
 
 }
 
